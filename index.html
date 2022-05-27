@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: rgb(77, 85, 29);
+        }
+
+        .left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        span {
+            display: none;
+            cursor: pointer;
+        }
+
+        li {
+            display: inline;
+            padding: 1rem;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        @media (max-width:1000px) {
+            .nav {
+                flex-direction: column;
+            }
+
+            ul {
+                display: none;
+            }
+
+            ul.visible {
+                display: block;
+            }
+
+            span {
+                display: block
+            }
+
+            .left {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="left">
+            <h1>LOGO</h1>
+            <span><i class="fa fa-anchor fa-2x" aria-hidden="true"></i></span>
+        </div>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">JS</a></li>
+        </ul>
+        
+    </div>
+
+    <script>
+        let lion = document.querySelector('span');
+        let List = document.querySelector('ul');
+
+        lion.addEventListener('click', () => {
+            List.classList.toggle('visible')
+        } )
+
+
+        window.addEventListener('resize' , () => {
+            if(window.innerWidth > 1000){
+            List.classList.remove('visible');}
+        })
+
+    </script>
+</body>
+</html>
