@@ -1,7 +1,7 @@
 # Navbar-project
-In this project ;
-▶️ A collapsible menu in the nav bar of almost all sites has been designed.
-▶️ The subjects learned were reinforced by using simple javascript dom codes.
+In this project ;<br>
+▶️ A collapsible menu in the nav bar of almost all sites has been designed.<br>
+▶️ The subjects learned were reinforced by using simple javascript dom codes.<br>
 ********************************** 🚀 🚀 🚀*********************************
 [Click here](https://bedirhanerguven10.github.io/Navbar-project/) to reach my project
 
